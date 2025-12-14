@@ -1,4 +1,4 @@
-# Go CEP API Server
+# Go Temperature from CEP API Server
 
 This project is a simple API server built using Go (Golang) to search for CEP and returning the information of the weather temperature in: Celsius, Fahrenheit and Kelvin.
 
