@@ -28,7 +28,12 @@ To run the API server, follow these steps:
    docker-compose run api-server-tests
    ```
 
-## Não incluido no Cloud Run pois o mesmo está cobrando um pré-pagamento
+## Link de Teste no Cloud Run
+https://temp-for-cep-372243913436.us-east1.run.app/tempForCep/{{CEP}}
+
+Exemplos:
+https://temp-for-cep-372243913436.us-east1.run.app/tempForCep/12345678 - CEP Inválido
+https://temp-for-cep-372243913436.us-east1.run.app/tempForCep/88111225 - CEP Válido
 
 ## API Endpoints
 
