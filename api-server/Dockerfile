@@ -7,10 +7,10 @@ RUN apk add --no-cache gcc musl-dev
 COPY . .
 
 RUN go mod download
-RUN go build -o api-server ./cmd/main.go
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o api-server ./cmd/main.go
 
 # Test stage
-FROM builder AS test
+FROM build AS test
 RUN go test -v ./...
 
 FROM alpine:latest
